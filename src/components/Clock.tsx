@@ -22,7 +22,7 @@ export class Clock extends React.Component<Props> {
     }, 1000);
   }
 
-  componentDidUpdate(prevProps: Readonly<Prors>): void {
+  componentDidUpdate(prevProps: Readonly<Props>): void {
     if (prevProps.name !== this.props.name) {
       // eslint-disable-next-line no-console
       console.warn(`Renamed from ${prevProps.name} to ${this.props.name}`);

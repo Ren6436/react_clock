@@ -42,6 +42,7 @@ export class App extends React.Component {
 
   // this code stops the timer
   componentWillUnmount(): void {
+    window.clearInterval(this.timerId);
     window.removeEventListener('contextmenu', this.hideClock);
     window.removeEventListener('click', this.showClock);
   }
